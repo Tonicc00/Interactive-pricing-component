@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    
+    <div class="aside">
+      <!--Monthly/yearly price bar-->
+      <div class="tarrif">
+        <div class="page-views"><span>100k</span> Pageviews</div>
+        <div class="price">
+          <span>$ <span class="pricefix">16</span>.00</span>
+          <span class="month"> /month</span>
+        </div>
+      </div>
+      <!--Progress bar-->
+      <div class="progress">
+        <div class="progress-bar">
+          <input type="range" min="1" max="5" step="1" value="3" class="myrange">
+        </div>
+        <!--Switched between month and year-->
+        <div class="monthly">
+          <span>Monthly Billing</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <span>Yearly Billing</span>
+          <span class="discount">25% discount</span>
+        </div>
+      </div>
+      <hr>
+      <!--Features-->
+      <div class="start">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Toni Jokić</a>.
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
